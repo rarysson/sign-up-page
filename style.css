@@ -112,6 +112,20 @@ button:hover {
 }
 /* Form side */
 
+.error-icon {
+	background-image: url("./images/icon-error.svg");
+	background-repeat: no-repeat;
+	background-position-x: 98%;
+	background-position-y: center;
+	color: var(--red);
+	font-weight: 600;
+}
+
+.error-icon:focus {
+	color: initial;
+	font-weight: initial;
+}
+
 
 
 @media (max-width: 1250px) {

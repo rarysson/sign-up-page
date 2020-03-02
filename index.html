@@ -29,10 +29,40 @@
       </header>
 
       <form method="get" class="shadow">
-        <input type="text" class="normal-font" name="first_name" id="first-name" placeholder="First Name" aria-label="First Name">
-        <input type="text" class="normal-font" name="last_name" id="last-name" placeholder="Last Name" aria-label="Last Name">
-        <input type="text" class="normal-font" name="email" id="email" placeholder="Email Address" aria-label="Email Address">
-        <input type="password" class="normal-font" name="password" id="password" placeholder="Password" aria-label="Password">
+        <input
+          type="text"
+          class="normal-font"
+          name="first_name"
+          id="first-name"
+          placeholder="First Name"
+          aria-label="First Name"
+          pattern="[a-zA-Z ]+"
+          required>
+        <input
+          type="text"
+          class="normal-font"
+          name="last_name"
+          id="last-name"
+          placeholder="Last Name"
+          aria-label="Last Name"
+          pattern="[a-zA-Z ]+"
+          required>
+        <input
+          type="text"
+          class="normal-font"
+          name="email" id="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+ "
+          required>
+        <input
+          type="password"
+          class="normal-font"
+          name="password"
+          id="password"
+          placeholder="Password"
+          aria-label="Password"
+          required>
 
         <button type="submit" class="normal-font">Claim your free trial</button>
 
@@ -52,6 +82,8 @@
       Coded by <a href="https://github.com/rarysson">Rarysson</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
