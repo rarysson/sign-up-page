@@ -1,6 +1,5 @@
 const inputs = document.querySelectorAll("input");
 const buttonForm = document.querySelector("button");
-let alreadySent = false;
 
 
 
@@ -13,8 +12,6 @@ function toggleErrorIcon(element) {
 }
 
 buttonForm.addEventListener("click", () => {
-	alreadySent = true;
-
 	inputs.forEach(input => {
 		toggleErrorIcon(input);
 	});
@@ -22,8 +19,6 @@ buttonForm.addEventListener("click", () => {
 
 inputs.forEach(input => {
 	input.addEventListener("change", function() {
-		if (alreadySent) {
-			toggleErrorIcon(this);
-		}
+		toggleErrorIcon(this);
 	});
 });
