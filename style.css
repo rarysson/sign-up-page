@@ -10,9 +10,9 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
-.big-font {	font-size: 60px; }
-.normal-font { font-size: 22px; }
-.small-font { font-size: 12px; }
+.big-font {	font-size: 3.1vw; }
+.normal-font { font-size: 1.15vw; }
+.small-font { font-size: 0.65vw; }
 
 .wrapper {
 	min-height: 98vh;
@@ -22,6 +22,7 @@ body {
 		var(--red);
 	padding: 5% 10%;
 	display: flex;
+	align-items: center;
 }
 
 /* About side */
@@ -110,3 +111,44 @@ button:hover {
 	color: var(--red);
 }
 /* Form side */
+
+
+
+@media (max-width: 1250px) {
+	.big-font {	font-size: 40px; }
+	.normal-font { font-size: 14px; }
+	.small-font { font-size: 8px; }
+
+	.about-side {
+		padding-right: 10%;
+	}
+}
+
+@media (max-width: 850px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.about-side {
+		text-align: center;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.big-font {	font-size: 30px; }
+
+	header {
+		padding: 15px 23%;
+		margin-bottom: 25px;
+	}
+
+	button {
+		border-bottom-width: 3px;
+		border-radius: 5px;
+	}
+
+	.terms {
+		padding: 0 19%;
+	}
+}
